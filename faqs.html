@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs — Zeffo</title>
+  <meta name="description" content="Frequently asked questions about Zeffo mutual fund gift cards.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header__container">
+      <a href="index.html" class="header__logo" aria-label="Zeffo Home">
+        <img src="assets/images/logo.svg" alt="Zeffo" height="36">
+      </a>
+
+      <button class="header__menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="header__menu-icon"></span>
+      </button>
+
+      <nav class="header__nav" id="nav-menu" role="navigation" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="faqs.html" class="header__nav-link header__nav-link--active">FAQ</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- FAQ Hero -->
+    <section class="faq-hero">
+      <h1 class="faq-hero__title">Frequently Asked Questions</h1>
+      <p class="faq-hero__subtitle">Everything you need to know about Zeffo gift cards.</p>
+    </section>
+
+    <!-- Quick Help Section -->
+    <section class="quickhelp">
+      <div class="quickhelp__container">
+        <div class="quickhelp__card">
+          <h3 class="quickhelp__title">Aadhaar-PAN linking</h3>
+          <hr class="quickhelp__divider">
+          <p class="quickhelp__desc">If your Aadhaar and PAN are not linked, you may need to do that before you can redeem your gift card.<br/><br/>No worries -- these screenshots show you exactly how to do it.</p>
+          <a href="mailto:support@zeffo.com" class="quickhelp__cta">View guide &rarr;</a>
+        </div>
+        <div class="quickhelp__card">
+          <h3 class="quickhelp__title">View on popular fintech apps</h3>
+          <hr class="quickhelp__divider">
+          <p class="quickhelp__desc">Did you know you can easily view your investment units in your preferred investment app? <br/><br/>We've created screen recordings of popular fintech apps. These screen recordings show you how.</p>
+          <a href="mailto:support@zeffo.com" class="quickhelp__cta">View recordings &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="faq">
+      <div class="faq__container">
+
+        <!-- Category Selector -->
+        <div class="faq__tabs" role="tablist">
+          <button class="faq__tab faq__tab--active" role="tab" aria-selected="true" data-category="purchase">Purchase</button>
+          <button class="faq__tab" role="tab" aria-selected="false" data-category="redemption">Redemption</button>
+        </div>
+
+        <!-- Purchase FAQs -->
+        <div class="faq__group" data-category="purchase">
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>What is a Zeffo mutual fund gift card?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <p>A Zeffo gift card lets you gift mutual fund units to someone. The recipient can redeem it and the units are held in their name at the fund house.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>How do I buy a gift card?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <p>Choose an AMC, select the amount, personalise your message, pay online and the gift card is delivered to the recipient via email or SMS.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Which mutual fund houses are supported?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <p>We currently support ICICI Prudential, HDFC, and Motilal Oswal mutual funds, with more AMCs being added soon.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Can I track or manage my gift card after purchase?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <p>Yes, you will receive a confirmation with details. You can also contact us at support@zeffo.com for any queries about your purchase.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Redemption FAQs -->
+        <div class="faq__group" data-category="redemption" style="display: none;">
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>How does the recipient redeem the gift card?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <p>The recipient receives a unique code. They complete a simple KYC process and the mutual fund units are allocated in their name.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Is there an expiry on the gift card?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <p>Gift cards have a redemption window. However, once redeemed, the mutual fund units have no expiry and stay invested until the holder decides to withdraw.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Where can I see my mutual fund units after redemption?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <p>Once redeemed, your units are held at the fund house. You can import and view them in most popular investing apps like Groww, Kuvera, or MFCentral.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="faq-contact">
+      <div class="faq-contact__container">
+        <h2 class="faq-contact__heading">Still have questions?</h2>
+        <p class="faq-contact__subheading">We're here to help. Reach out and we'll get back to you as soon as possible.</p>
+        <a href="contact.html" class="faq-contact__cta">Contact</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo">
+        <img src="assets/images/logo_tagline.svg" alt="Zeffo — Gift the power of investing">
+      </div>
+      <div class="footer__right">
+        <div class="footer__info">
+          <p class="footer__copyright">&copy; 2025 Zeffo. All rights reserved.</p>
+          <p class="footer__contact">Contact us: <a href="mailto:support@zeffo.com">support@zeffo.com</a></p>
+          <p class="footer__trademark">Zeffo is a registered trademark of Zeffo Technologies Pvt. Ltd.</p>
+        </div>
+        <div class="footer__links">
+          <a href="tnc.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="faqs.html">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
