@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zeffo — Mutual Fund Gift Cards</title>
   <meta name="description" content="Gift the power of investing. Zeffo lets you gift mutual fund units to your loved ones.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,14 +38,31 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero__bg">
-        <img src="assets/images/banner_1.jpeg" alt="" class="hero__bg-img hero__bg-img--active">
-        <img src="assets/images/banner_2.jpeg" alt="" class="hero__bg-img">
-        <img src="assets/images/banner_3.jpeg" alt="" class="hero__bg-img">
-        <img src="assets/images/banner_4.jpeg" alt="" class="hero__bg-img">
+        <picture class="hero__bg-img hero__bg-img--active">
+          <source media="(max-width: 767px)" srcset="assets/images/banner_1_mobile.jpg">
+          <source media="(max-width: 1024px)" srcset="assets/images/banner_1_tab.jpg">
+          <img src="assets/images/banner_1.jpeg" alt="">
+        </picture>
+        <picture class="hero__bg-img">
+          <source media="(max-width: 767px)" srcset="assets/images/banner_2_mobile.jpg">
+          <source media="(max-width: 1024px)" srcset="assets/images/banner_2_tab.jpg">
+          <img src="assets/images/banner_2.jpeg" alt="">
+        </picture>
+        <picture class="hero__bg-img">
+          <source media="(max-width: 767px)" srcset="assets/images/banner_3_mobile.jpg">
+          <source media="(max-width: 1024px)" srcset="assets/images/banner_3_tab.jpg">
+          <img src="assets/images/banner_3.jpeg" alt="">
+        </picture>
+        <picture class="hero__bg-img">
+          <source media="(max-width: 767px)" srcset="assets/images/banner_4_mobile.jpg">
+          <source media="(max-width: 1024px)" srcset="assets/images/banner_4_tab.jpg">
+          <img src="assets/images/banner_4.jpeg" alt="">
+        </picture>
       </div>
+      <img src="assets/images/shi_he.png" alt="" class="hero__badge">
       <div class="hero__content">
-        <h1 class="hero__title">Some gifts should<br>last longer than the moment</h1>
-        <p class="hero__subtitle">Simple to buy. Easy to redeem.<br>A head start for your loved one's future.</p>
+        <h1 class="hero__title">Some gifts should <br>last longer than the moment</h1>
+        <p class="hero__subtitle">Simple to buy. Easy to redeem. <br>A head start for your loved one's future.</p>
       </div>
     </section>
 
