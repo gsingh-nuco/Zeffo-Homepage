@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos — Zeffo</title>
+  <meta name="description" content="Watch how to view and manage your mutual fund gift card units on popular fintech apps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header__container">
+      <a href="index.html" class="header__logo" aria-label="Zeffo Home">
+        <img src="assets/images/logo.svg" alt="Zeffo" height="36">
+      </a>
+
+      <button class="header__menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="header__menu-icon"></span>
+      </button>
+
+      <nav class="header__nav" id="nav-menu" role="navigation" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="faqs.html" class="header__nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Videos Section -->
+    <section class="vidpage">
+      <div class="vidpage__container">
+        <h2 class="vidpage__heading">View on popular fintech apps</h2>
+        <div class="vidpage__grid">
+
+          <button class="vidpage__tile" data-video="assets/videos/GROWW.mp4" aria-label="Play Groww video">
+            <img src="assets/images/logo-groww.svg" alt="Groww" class="vidpage__logo" loading="lazy">
+            <span class="vidpage__cta">Play Video</span>
+          </button>
+
+          <button class="vidpage__tile" data-video="assets/videos/IND_MONEY.mp4" aria-label="Play INDmoney video">
+            <img src="assets/images/logo-ind-money.svg" alt="INDmoney" class="vidpage__logo" loading="lazy">
+            <span class="vidpage__cta">Play Video</span>
+          </button>
+
+          <button class="vidpage__tile" data-video="assets/videos/PAYTM_MONEY.mp4" aria-label="Play Paytm Money video">
+            <img src="assets/images/logo-paytm-money.png" alt="Paytm Money" class="vidpage__logo" loading="lazy">
+            <span class="vidpage__cta">Play Video</span>
+          </button>
+
+          <button class="vidpage__tile" data-video="assets/videos/ET_MONEY.mp4" aria-label="Play ET Money video">
+            <img src="assets/images/logo-et-money.png" alt="ET Money" class="vidpage__logo" loading="lazy">
+            <span class="vidpage__cta">Play Video</span>
+          </button>
+
+          <button class="vidpage__tile" data-video="assets/videos/KUVERA.mp4" aria-label="Play Kuvera video">
+            <img src="assets/images/logo-kuvera.svg" alt="Kuvera" class="vidpage__logo" loading="lazy">
+            <span class="vidpage__cta">Play Video</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Overlay -->
+    <div class="vidpage__overlay" id="video-overlay" aria-hidden="true" role="dialog" aria-label="Video player">
+      <div class="vidpage__overlay-content">
+        <button class="vidpage__overlay-close" aria-label="Close video">&times;</button>
+        <div class="vidpage__overlay-player">
+          <video id="video-player" controls playsinline>
+            <source id="video-source" src="" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo">
+        <img src="assets/images/logo_tagline.svg" alt="Zeffo — Gift the power of investing" width="237" height="195" loading="lazy">
+      </div>
+      <div class="footer__right">
+        <div class="footer__info">
+          <p class="footer__copyright">&copy; 2026 Braveheart Labs India Pvt. Ltd.<br/>All rights reserved</p>
+          <p class="footer__contact">Contact us: <a href="mailto:support@zeffo.com">support@zeffo.com</a></p>
+          <p class="footer__trademark">*Trademarks and logos are the property of their respective owners.</p>
+        </div>
+        <div class="footer__links">
+          <a href="tnc.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="faqs.html">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

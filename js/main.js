@@ -82,6 +82,53 @@
   });
 })();
 
+// Video overlay
+(function () {
+  var overlay = document.getElementById('video-overlay');
+  var video = document.getElementById('video-player');
+  var source = document.getElementById('video-source');
+  if (!overlay || !video || !source) return;
+
+  var closeBtn = overlay.querySelector('.vidpage__overlay-close');
+
+  function openVideo(src) {
+    source.src = src;
+    video.load();
+    overlay.classList.add('is-active');
+    overlay.setAttribute('aria-hidden', 'false');
+    video.play();
+    closeBtn.focus();
+  }
+
+  function closeVideo() {
+    video.pause();
+    overlay.classList.remove('is-active');
+    overlay.setAttribute('aria-hidden', 'true');
+    video.currentTime = 0;
+    source.src = '';
+  }
+
+  document.addEventListener('click', function (e) {
+    var tile = e.target.closest('.vidpage__tile');
+    if (tile) {
+      var src = tile.getAttribute('data-video');
+      if (src) openVideo(src);
+    }
+  });
+
+  closeBtn.addEventListener('click', closeVideo);
+
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) closeVideo();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay.classList.contains('is-active')) {
+      closeVideo();
+    }
+  });
+})();
+
 // FAQ accordion
 (function () {
   document.addEventListener('click', function (e) {
