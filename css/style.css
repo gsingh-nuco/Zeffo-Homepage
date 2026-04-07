@@ -764,7 +764,11 @@ img {
 
 .follow {
   background-color: var(--color-accent);
-  padding: 4.7vw 0;
+  background-image: url('../assets/images/follow_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 7vw 0;
 }
 
 .follow__container {
@@ -777,7 +781,7 @@ img {
 }
 
 .follow__text {
-  flex: 1;
+  width: 47vw;
 }
 
 .follow__heading {
@@ -819,15 +823,6 @@ img {
   border-radius: 4px;
 }
 
-.follow__image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.follow__image img {
-  width: 100%;
-}
 
 /* ============================================
    Footer
@@ -1146,7 +1141,7 @@ img {
   flex: 1;
   aspect-ratio: 1 / 1;
   max-width: 42.2vw;
-  border: 2px solid var(--color-accent);
+  border: 1px solid var(--color-accent);
   border-radius: 12px;
   padding: 3.125vw;
   display: flex;
@@ -1214,21 +1209,20 @@ img {
 }
 
 .faq__video {
-  border-radius: 16px;
   overflow: hidden;
-  border: 1px solid #FF8F66;
-  height: 360px;
+  width: 100%;
   margin-bottom: 48px;
 }
 
 .faq__video video {
   width: 100%;
-  height: 100%;
+  border: 1px solid #FF8F66;
+  border-radius: 16px;
 }
 
 .faq__tabs {
   display: flex;
-  border: 2px solid var(--color-accent);
+  border: 1px solid var(--color-accent);
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
@@ -1396,8 +1390,8 @@ img {
 }
 
 .vidpage__tile {
-  width: 300px;
-  height: 300px;
+  width: 275px;
+  height: 275px;
   background-color: var(--color-gray);
   border-radius: 16px;
   border: none;
@@ -1423,6 +1417,12 @@ img {
 
 .vidpage__tile:active {
   transform: scale(0.97);
+}
+
+.vidpage__tile .img__cont {
+  height: 120px;
+  display: flex;
+  align-items: center;
 }
 
 .vidpage__logo {
@@ -1818,6 +1818,15 @@ img {
     gap: 32px;
   }
 
+  .multiplier__intro {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .multiplier__list {
+    margin-left: 6vw;
+  }
+
   .multiplier__image img {
     max-width: 320px;
   }
@@ -1826,10 +1835,19 @@ img {
     text-align: center;
   }
 
+  .multiplier__footer {
+    text-align: center;
+  }
+
   /* Follow us mobile */
 
   .follow {
-    padding: 40px 0;
+    background-image: url('../assets/images/follow_bg_mobile.png');
+    padding: 28px 0 35vw;
+  }
+
+  .follow__text {
+    width: auto;
   }
 
   .follow__container {
@@ -1847,9 +1865,6 @@ img {
     height: 28px;
   }
 
-  .follow__image img {
-    max-width: 280px;
-  }
 
   /* Footer mobile */
 
@@ -2113,6 +2128,10 @@ img {
     height: auto;
     aspect-ratio: 1 / 1;
     gap: 16px;
+  }
+
+  .vidpage__tile .img__cont {
+    height: 60px;
   }
 
   .vidpage__logo {
