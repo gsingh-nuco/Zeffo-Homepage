@@ -1314,6 +1314,11 @@ img {
   color: var(--color-text-light);
 }
 
+.faq__answer a {
+  text-decoration: underline;
+  color: initial;
+}
+
 /* ============================================
    FAQ Contact Section
    ============================================ */
