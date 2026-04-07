@@ -274,7 +274,7 @@ img {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  padding: 10px 10px 0 0;
+  padding: 15px 5px 0 0;
 }
 
 .hero__badge {
@@ -321,7 +321,7 @@ img {
 .giftcards__container {
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 6vw var(--container-padding);
+  padding: 8vw var(--container-padding);
 }
 
 .giftcards__grid {
@@ -335,7 +335,7 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 3vw;
-  flex: 0 0 21.875vw;
+  flex: 0 0 25vw;
 }
 
 .giftcards__item .btn {
@@ -394,7 +394,7 @@ img {
    ============================================ */
 
 .infocard {
-  padding: 10vw var(--container-padding) 12vw;
+  padding: 10vw var(--container-padding);
   background-color: var(--color-white);
   display: flex;
   justify-content: center;
@@ -408,7 +408,8 @@ img {
   align-items: stretch;
   overflow: hidden;
   width: 80vw;
-  padding: 5vw;
+  padding: 8vw 5vw;
+  position: relative;
 }
 
 .infocard__text {
@@ -450,13 +451,13 @@ img {
 
 .infocard__image {
   width: 35vw;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .infocard__image img {
-  width: 80%;
-  position: absolute;
-  right: 0;
+  width: 100%;
   border-radius: 8px;
 }
 
@@ -487,7 +488,7 @@ img {
 .trust__subheading {
   font-size: 1.25vw;
   line-height: 1.55;
-  color: var(--color-text-light);
+  color: var(--color-text);
   margin: 0 19.5vw 4.5vw;
 }
 
@@ -523,7 +524,7 @@ img {
   display: flex;
   align-items: center;
   gap: 1.875vw;
-  margin-top: 10vw;
+  margin-top: 5.5vw;
   padding: 2.25vw 6.25vw;
   background-color: #482E4D;
   border-radius: 16px;
@@ -905,7 +906,7 @@ img {
    ============================================ */
 
 .about-banner {
-  background-image: url('../assets/images/bg1.svg');
+  background-image: url('../assets/images/about_bg1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -936,6 +937,7 @@ img {
 .about-banner__line {
   font-size: 1.562vw;
   line-height: 1.6;
+  margin-bottom: 12px;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -980,7 +982,7 @@ img {
   font-size: 1.562vw;
   line-height: 1.6;
   color: var(--color-text);
-  max-width: 46.875vw;
+  max-width: 55vw;
   margin: 0 auto 12px;
 }
 
@@ -1042,11 +1044,11 @@ img {
 /* From the Founder */
 
 .founder {
-  background-image: url('../assets/images/bg2.svg');
+  background-image: url('../assets/images/about_bg2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 10.9vw 0;
+  padding: 9vw 0;
 }
 
 .founder__container {
@@ -1055,12 +1057,13 @@ img {
   padding: 0 var(--container-padding);
   display: flex;
   align-items: flex-start;
-  gap: 3.75vw;
+  gap: 6vw;
 }
 
 .founder__image {
+  margin-top: 15px;
   flex: 0 0 21.875vw;
-  border-radius: 16px;
+  border-radius: 32px;
   overflow: hidden;
   background: #F1F2ED;
 }
@@ -1085,6 +1088,7 @@ img {
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 16px;
+  letter-spacing: 0.5px;
 }
 
 .founder__sign {
@@ -1199,6 +1203,28 @@ img {
 }
 
 /* Category tabs */
+
+.faq__video__container {
+  text-align: center;
+}
+
+.faq__video__heading {
+  font-size: 2.5vw;
+  margin: 48px 0 32px;
+}
+
+.faq__video {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #FF8F66;
+  height: 360px;
+  margin-bottom: 48px;
+}
+
+.faq__video video {
+  width: 100%;
+  height: 100%;
+}
 
 .faq__tabs {
   display: flex;
@@ -1505,7 +1531,7 @@ img {
 
 @media (max-width: 767px) {
   :root {
-    --container-padding: 32px;
+    --container-padding: 5vw;
     --header-height: 60px;
   }
 
@@ -1659,7 +1685,7 @@ img {
   }
 
   .steps__heading {
-    margin-bottom: 28px;
+    margin-bottom: 40px;
   }
 
   .steps__grid {
@@ -1669,24 +1695,24 @@ img {
   }
 
   .steps__item {
-    max-width: 320px;
+    max-width: 400px;
+    width: 100%;
   }
 
   /* Info card mobile */
 
   .infocard {
-    padding: 48px 0 60px;
+    padding: 64px 0 0 0;
   }
 
   .infocard__card {
-    width: 90%;
+    width: 100%;
+    border-radius: 0;
     flex-direction: column;
   }
 
   .infocard__text {
-    width: 80vw;
-    padding: 5vw;
-    padding-bottom: 28px;
+    width: 90vw;
     text-align: center;
   }
 
@@ -1695,6 +1721,7 @@ img {
     width: 100%;
     height: 80vw;
     max-height: 480px;
+    position: relative;
   }
 
   .infocard__image img {
@@ -1709,7 +1736,8 @@ img {
   /* Trust mobile */
 
   .trust {
-    padding: 60px var(--container-padding) 40px;
+    padding: 48px var(--container-padding);
+    background: none;
   }
 
   .trust__heading br {
@@ -1733,6 +1761,7 @@ img {
     text-align: center;
     gap: 16px;
     padding: 24px;
+    margin-top: 48px;
   }
 
   .partners h3 {
@@ -1849,6 +1878,7 @@ img {
   /* About page mobile */
 
   .about-banner {
+    background-image: url('../assets/images/about_bg1_mobile.png');
     padding: 48px 0;
   }
 
@@ -1862,8 +1892,13 @@ img {
     text-align: center;
   }
 
+  .about-banner__text p {
+    margin-bottom: 8px;
+  }
+
   .about-banner__heading {
     font-weight: 400;
+    margin-bottom: 12px;
   }
 
   .about-banner__image img {
@@ -1919,12 +1954,12 @@ img {
   /* Founder mobile */
 
   .founder {
+    background-image: url('../assets/images/about_bg2_mobile.png');
     padding: 48px 0;
   }
 
   .founder__container {
     flex-direction: column;
-    align-items: center;
     gap: 32px;
   }
 
@@ -1958,6 +1993,7 @@ img {
   }
 
   .quickhelp__container {
+    gap: 4vw;
     flex-direction: column;
     align-items: center;
   }
@@ -1986,6 +2022,28 @@ img {
     max-width: 100%;
   }
 
+  .faq__video__heading {
+    font-size: 5.8vw;
+    margin: 40px 0 20px;
+    max-width: 80vw;
+  }
+
+
+  .faq__video {
+    overflow: hidden;
+    border: none;
+    height: auto;
+  }
+
+  .faq__video video {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #FF8F66;
+    height: auto;
+    width: 100%;
+  }
+
+
   .faq__tabs {
     width: 100%;
     max-width: 100%;
@@ -2009,7 +2067,7 @@ img {
   /* FAQ contact mobile */
 
   .faq-contact {
-    padding: 40px 0;
+    padding: 40px 0 120px;
   }
 
   .faq-contact__container {
@@ -2074,10 +2132,6 @@ img {
    ============================================ */
 
 @media (max-width: 400px) {
-  .giftcards__item {
-    max-width: 240px;
-  }
-
   .steps__heading,
   .infocard__subtitle,
   .trust__heading,
@@ -2086,6 +2140,7 @@ img {
   .multiplier__heading,
   .follow__heading {
     font-size: 24px;
+    letter-spacing: -0.5px;
   }
 
   .trust__subheading,
@@ -2094,7 +2149,7 @@ img {
   .multiplier__intro,
   .multiplier__list li,
   .follow__desc {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .infocard__cta,
@@ -2104,7 +2159,7 @@ img {
   }
 
   .trust__container {
-    padding: 0 var(--container-padding);
+    padding: 0;
   }
 
   .partners {
@@ -2123,20 +2178,6 @@ img {
 
   .about-banner__heading {
     font-size: 24px;
-  }
-
-  .senior-team__grid {
-    grid-template-columns: repeat(2, 100px);
-    gap: 20px;
-  }
-
-  .senior-team__member {
-    width: 100px;
-  }
-
-  .senior-team__photo {
-    width: 100px;
-    height: 100px;
   }
 
   .about-goal__text {

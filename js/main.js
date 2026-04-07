@@ -71,6 +71,7 @@
           group.style.display = '';
         } else {
           group.style.display = 'none';
+          group.querySelector('video').pause()
           // Collapse open answers in hidden group
           group.querySelectorAll('.faq__question').forEach(function (q) {
             q.setAttribute('aria-expanded', 'false');
