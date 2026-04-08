@@ -1124,7 +1124,7 @@ img {
 .quickhelp {
   display: flex;
   justify-content: center;
-  padding: 0 0 3.75vw;
+  padding: 0 0 8vw;
   background-color: var(--color-white);
 }
 
@@ -1152,6 +1152,7 @@ img {
 }
 
 .quickhelp__title {
+  line-height: 1.25;
   font-size: 3.125vw;
   font-weight: 400;
   color: var(--color-text);
@@ -1201,11 +1202,15 @@ img {
 
 .faq__video__container {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .faq__video__heading {
   font-size: 2.5vw;
-  margin: 48px 0 32px;
+  margin: 3.75vw 0 2.5vw;
 }
 
 .faq__video {
@@ -1264,7 +1269,7 @@ img {
   border: none;
   padding: 1.5625vw 0;
   font-family: var(--font-family);
-  font-size: 1.5625vw;
+  font-size: 1.25vw;
   font-weight: 600;
   color: var(--color-text);
   text-align: left;
@@ -1318,7 +1323,7 @@ img {
    ============================================ */
 
 .faq-contact {
-  padding: 4.7vw 0;
+  padding: 2vw 0 12vw;
   background-color: var(--color-white);
   text-align: center;
 }
@@ -1365,7 +1370,7 @@ img {
 
 .vidpage {
   background-color: var(--color-white);
-  padding: 60px 0 80px;
+  padding: 60px 0 12.5vw;
 }
 
 .vidpage__container {
@@ -1375,7 +1380,7 @@ img {
 }
 
 .vidpage__heading {
-  font-size: var(--fs-heading);
+  font-size: 3.125vw;
   font-weight: 400;
   color: var(--color-text);
   text-align: center;
@@ -1552,7 +1557,8 @@ img {
   .about-banner__heading,
   .senior-team__heading,
   .senior-team__goal,
-  .founder__heading {
+  .founder__heading,
+  .vidpage__heading {
     font-size: clamp(20px, 5.8vw, 30px);
   }
 
@@ -2009,7 +2015,7 @@ img {
   /* Quick help mobile */
 
   .quickhelp {
-    padding: 0 0 40px;
+    padding: 0 0 80px;
   }
 
   .quickhelp__container {
@@ -2044,7 +2050,7 @@ img {
 
   .faq__video__heading {
     font-size: 5.8vw;
-    margin: 40px 0 20px;
+    margin: 0 0 24px;
     max-width: 80vw;
   }
 
@@ -2076,7 +2082,7 @@ img {
 
   .faq__question {
     padding: 16px 0;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .faq__answer p {
@@ -2110,7 +2116,7 @@ img {
   /* Videos page mobile */
 
   .vidpage {
-    padding: 40px 0 60px;
+    padding: 40px 0 20vw;
   }
 
   .vidpage__heading {
