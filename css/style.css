@@ -481,6 +481,7 @@ img {
   color: var(--color-text);
   margin-bottom: 16px;
 }
+
 .trust__heading br {
   display: none;
 }
@@ -1027,6 +1028,7 @@ img {
   position: relative;
   top: -5.5vw;
 }
+
 .team__goal {
   margin-top: 5vw;
 }
@@ -1152,7 +1154,7 @@ img {
 }
 
 .quickhelp__title {
-  line-height: 1.25;
+  line-height: 1.1;
   font-size: 3.125vw;
   font-weight: 400;
   color: var(--color-text);
@@ -1579,7 +1581,7 @@ img {
 
   .infocard__cta,
   .video-section__cta,
-  .team-section__cta, 
+  .team-section__cta,
   .multiplier__footer {
     font-size: clamp(14px, 3.9vw, 21px);
   }
@@ -1644,7 +1646,7 @@ img {
     width: 130px;
     height: 100px;
   }
-  
+
   .hero__badge {
     width: 75px;
   }
@@ -1655,6 +1657,7 @@ img {
     justify-self: center;
     margin-bottom: 12px;
   }
+
   .hero__title br {
     display: none;
   }
@@ -1663,6 +1666,7 @@ img {
     font-weight: 400;
     max-width: 100%;
   }
+
   .hero__subtitle br {
     display: none;
   }
@@ -1683,6 +1687,7 @@ img {
     max-width: 400px;
     gap: 24px;
   }
+
   .giftcards__item .btn {
     font-size: 16px;
     line-height: 20px;
@@ -1776,7 +1781,7 @@ img {
   }
 
   .partners h3 {
-    font-size: clamp(16px, 4.2vw ,24px);
+    font-size: clamp(16px, 4.2vw, 24px);
   }
 
   .pine-labs-desc {
@@ -1813,6 +1818,7 @@ img {
   .team__desc {
     max-width: 100%;
   }
+
   .team__image img {
     width: 100%;
   }
@@ -2162,6 +2168,7 @@ img {
    ============================================ */
 
 @media (max-width: 400px) {
+
   .steps__heading,
   .infocard__subtitle,
   .trust__heading,
@@ -2195,9 +2202,11 @@ img {
   .partners {
     width: unset;
   }
+
   .trust__logos {
     gap: 32px
   }
+
   .trust__logo-item img {
     width: 60px;
   }
